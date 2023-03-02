@@ -24,8 +24,8 @@
 python manage.py createsuperuser
 
 ### Mô tả hoạt động
-- url: liên kết front-end với back-end
+- urls: liên kết front-end với back-end
 - views: tiếp nhận yêu cầu từ front-end -> xử lý dữ liệu từ models -> trả về json.
 - models : làm việc với database
-- serializer: chuyển dữ liệu dạng object(Django) của model sang json(Front-end) và ngược lại.
+- serializers: chuyển dữ liệu dạng object(Django) của model sang json(Front-end) và ngược lại.
 - api: xử lý phần logic
