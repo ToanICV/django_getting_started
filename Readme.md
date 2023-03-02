@@ -1,28 +1,31 @@
-# Installation
-$ pipenv install django
-$ pipenv install djangorestframework
+### Cài đặt
+- pipenv install django
+- pipenv install djangorestframework
 
-# Create a project
-$ django-admin startproject [proj_name] [directory]
-$ django-admin startapp [app_name] [directory]
+### Tạo project
+- django-admin startproject [proj_name] [directory]
+- django-admin startapp [app_name] [directory]
 
-# Sync project and app
-$ python manage.py migrate
+### Đồng bộ project và app
+- python manage.py migrate
 
-# Try to run
-$ python manage.py runserver
+### Chạy thử 
+- python manage.py runserver
 
-# Them package vao list INSTALLED_APPS trong settings.py:
-- App name -> ex: demo_app, bat buoc phai lam ngay khi tao app
-- Necessary packages -> ex: rest_framework
+### Thêm package vào list INSTALLED_APPS trong settings.py:
+- App name -> ví dụ: demo_app, bắt buộc thực hiện lệnh này khi khởi tạo app
+- Các packages cần thiết-> ví dụ: rest_framework
 
-# Explaintation
-- models : lam viec voi database
-- serializer: chuyen queryset hoac model cua django thanh dang du lieu de dang render hon tren web va nguoc lai
-- api: xu ly phan logic
+### Khi co thay doi can apply
+- python manage.py makemigrations
+- python manage.py migrate
 
-# Khi co thay doi can apply
-$ python manage.py makemigrations
-$ python manage.py migrate
+### Tạo tài khoản admin
+python manage.py createsuperuser
 
-# Tao Tai khoan
+### Mô tả hoạt động
+- url: liên kết front-end với back-end
+- views: tiếp nhận yêu cầu từ front-end -> xử lý dữ liệu từ models -> trả về json.
+- models : làm việc với database
+- serializer: chuyển dữ liệu dạng object(Django) của model sang json(Front-end) và ngược lại.
+- api: xử lý phần logic
