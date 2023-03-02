@@ -16,7 +16,7 @@
 - App name -> ví dụ: demo_app, bắt buộc thực hiện lệnh này khi khởi tạo app
 - Các packages cần thiết-> ví dụ: rest_framework
 
-### Khi co thay doi can apply
+### Cập nhật thay đổi
 - python manage.py makemigrations
 - python manage.py migrate
 
