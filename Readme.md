@@ -21,7 +21,7 @@
 - python manage.py migrate
 
 ### Tạo tài khoản admin
-python manage.py createsuperuser
+- python manage.py createsuperuser
 
 ### Mô tả hoạt động
 - urls: liên kết front-end với back-end
